@@ -33,6 +33,8 @@ export {
   applyXiaomiProviderConfig,
   applyZaiConfig,
   applyZaiProviderConfig,
+  applyDigitalOceanGradientConfig,
+  applyDigitalOceanGradientProviderConfig,
 } from "./onboard-auth.config-core.js";
 export {
   applyMinimaxApiConfig,
@@ -68,18 +70,21 @@ export {
   setXiaomiApiKey,
   setZaiApiKey,
   setXaiApiKey,
+  setDigitalOceanGradientApiKey,
   writeOAuthCredentials,
   VERCEL_AI_GATEWAY_DEFAULT_MODEL_REF,
   XIAOMI_DEFAULT_MODEL_REF,
   ZAI_DEFAULT_MODEL_REF,
   TOGETHER_DEFAULT_MODEL_REF,
   XAI_DEFAULT_MODEL_REF,
+  DIGITALOCEAN_GRADIENT_DEFAULT_MODEL_REF,
 } from "./onboard-auth.credentials.js";
 export {
   buildMinimaxApiModelDefinition,
   buildMinimaxModelDefinition,
   buildMoonshotModelDefinition,
   buildZaiModelDefinition,
+  buildDigitalOceanGradientModelDefinition,
   DEFAULT_MINIMAX_BASE_URL,
   MOONSHOT_CN_BASE_URL,
   QIANFAN_BASE_URL,
@@ -99,4 +104,7 @@ export {
   ZAI_CODING_GLOBAL_BASE_URL,
   ZAI_CN_BASE_URL,
   ZAI_GLOBAL_BASE_URL,
+  DIGITALOCEAN_GRADIENT_BASE_URL,
+  DIGITALOCEAN_GRADIENT_DEFAULT_MODEL_ID,
+  DIGITALOCEAN_GRADIENT_DEFAULT_MODEL_REF,
 } from "./onboard-auth.models.js";
