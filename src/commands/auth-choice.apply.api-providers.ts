@@ -1080,7 +1080,7 @@ export async function applyAuthChoiceApiProviders(
     }
 
     if (!hasCredential && params.opts?.token && params.opts?.tokenProvider === "digitalocean") {
-      await setDigitalOceanGradientApiKey(normalizeApiKeyInput(params.opts.token), params.agentDir);
+      setDigitalOceanGradientApiKey(normalizeApiKeyInput(params.opts.token), params.agentDir);
       hasCredential = true;
     }
 
@@ -1092,7 +1092,7 @@ export async function applyAuthChoiceApiProviders(
           initialValue: true,
         });
         if (useExisting) {
-          await setDigitalOceanGradientApiKey(envKey.apiKey, params.agentDir);
+          setDigitalOceanGradientApiKey(envKey.apiKey, params.agentDir);
           hasCredential = true;
         }
       }
@@ -1106,7 +1106,7 @@ export async function applyAuthChoiceApiProviders(
       if (!apiKey || !apiKey.trim()) {
         return { config: nextConfig };
       }
-      await setDigitalOceanGradientApiKey(normalizeApiKeyInput(apiKey), params.agentDir);
+      setDigitalOceanGradientApiKey(normalizeApiKeyInput(apiKey), params.agentDir);
     }
 
     nextConfig = applyDigitalOceanGradientProviderConfig(nextConfig);
